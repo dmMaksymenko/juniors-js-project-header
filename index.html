@@ -8,11 +8,11 @@
     <script type="module" crossorigin src="/juniors-js-project/commonHelpers.js"></script>
     <link rel="modulepreload" crossorigin href="/juniors-js-project/assets/vendor-b1ee5dfe.js">
     <link rel="stylesheet" href="/juniors-js-project/assets/vendor-e5212ee8.css">
-    <link rel="stylesheet" href="/juniors-js-project/assets/index-06a9da86.css">
+    <link rel="stylesheet" href="/juniors-js-project/assets/index-42a191b5.css">
   </head>
   <body>
     <header>
-      <section class="header">
+      <div class="header">
   <nav class="header-nav">
     <div class="header-logo">
       <a href="./index.html" class="header-logo-link">
@@ -72,11 +72,13 @@
     </ul>
     <img src="/juniors-js-project/assets/books-077eccf9.png" alt="Books Image" class="books-img" />
   </div>
-</section>
+</div>
 
     </header>
     <main>
-      <section class="section-home-books section-main">
+      <div class="main-container">
+        <div class="side-bar-container">
+          <section class="section-home-books section-main">
   <div class="home-sidebar-nav-categories wrap-categories">
     <h3 class="home-all-categories text-style-book-category">All categories</h3>
     <ul
@@ -84,13 +86,44 @@
       id="categories-list"
     ></ul>
   </div>
-  <div class="home-books wrap-books" id="books-list"></div>
+  <!-- <div class="home-books wrap-books" id="books-list"></div> -->
 </section>
 
-      <section class="main">
-  <button id="scrollUpButton" title="Back to top">&#8593;</button>
+          <div class="support">
+  <div class="support-title">
+    <h2 class="support-title-text">Support Ukraine</h2>
+    <svg class="support-svg" width="20" height="32">
+      <use href="/juniors-js-project/assets/icons-030be699.svg#coat-of-arms"></use>
+    </svg>
+  </div>
+  <div class="support-list">
+    <ul class="support-ukraine-list js-suport-list"></ul>
+  </div>
+  <div class="support-arrow-wrap">
+    <span class="support-arrow support-arrow-up hidden">
+      <svg class="support-button" width="12" height="20">
+        <use href="/juniors-js-project/assets/icons-030be699.svg#arrow-up"></use>
+      </svg>
+    </span>
+    <span class="support-arrow support-arrow-down">
+      <svg class="support-button" width="12" height="20">
+        <use href="/juniors-js-project/assets/icons-030be699.svg#arrow-down"></use>
+      </svg>
+    </span>
+  </div>
+</div>
+
+        </div>
+
+        <section class="home-page">
+  <h1 class="section-title">
+    Best Sellers
+    <span><a class="section-title-link" href="./index.html">Books</a></span>
+  </h1>
+  <ul class="home-list js-home-list"></ul>
 </section>
 
+      </div>
     </main>
     <footer>
       <!-- <section class="footer">
@@ -107,7 +140,7 @@
     
     
     
-
+    
     <!-- Пока разрабатываем, подключаем свои js файлы ниже main.js. -->
     <!-- Перед сдачей проэкта скопипастим все в main.js -->
   </body>
